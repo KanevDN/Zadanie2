@@ -1,0 +1,117 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Первое
+
+            string str;
+            Console.WriteLine("Введите строку");
+            str = Console.ReadLine();
+              int z = 0;
+
+              for (int i = 0; i < str.Length; i++)
+              {
+                  if (str[i] == 'f')
+                  {
+                      z++;
+                  }
+                      if (z >= 1)
+                      {
+                          Console.WriteLine("1");
+                      }
+                      else if (z<1)
+                      {
+                          Console.WriteLine("2");
+                      }
+
+              }
+              Console.ReadKey();
+          
+            //Второе
+/*
+            Programm Translator = new Programm();
+
+            string txt = Console.ReadLine();
+
+            string  per= Translator.Translit(txt);
+            Console.WriteLine("Текст переведен, получилось \'{0}\'", per);
+            Console.ReadLine();
+        }
+
+        public class Programm
+        {
+
+            Dictionary<string, string> dictionaryChar = new Dictionary<string, string>()
+            {
+                {"а","a"},
+                {"б","b"},
+                {"в","v"},
+                {"г","g"},
+                {"д","d"},
+                {"е","e"},
+                {"ё","yo"},
+                {"ж","zh"},
+                {"з","z"},
+                {"и","i"},
+                {"й","y"},
+                {"к","k"},
+                {"л","l"},
+                {"м","m"},
+                {"н","n"},
+                {"о","o"},
+                {"п","p"},
+                {"р","r"},
+                {"с","s"},
+                {"т","t"},
+                {"у","u"},
+                {"ф","f"},
+                {"х","h"},
+                {"ц","ts"},
+                {"ч","ch"},
+                {"ш","sh"},
+                {"щ","sch"},
+                {"ъ","'"},
+                {"ы","yi"},
+                {"ь","'"},
+                {"э","e"},
+                {"ю","yu"},
+                {"я","ya"}
+            };
+            public string Translit(string source)
+            {
+                var result = "";
+
+                foreach (var dob in source)
+                {
+                    var a = "";
+
+                    if (dictionaryChar.TryGetValue(dob.ToString(), out a))
+                    {
+                        result += a;
+                    }
+
+                    else result += dob;
+                }
+                return result;
+            }
+            */
+            //Третье
+
+            /*for (int i = 0; i < str.Length; i++)
+            {
+                if (str[i] == 'h')
+                {
+                    Console.WriteLine(str.Replace("h", "H"));
+                }   
+
+            }    */
+        }
+    }
+}
